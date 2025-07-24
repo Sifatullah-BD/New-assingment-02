@@ -36,6 +36,8 @@
     font-size: 22px;
     font: weight 500;
 }
+
+
   /* navbar style*/
   * {
     margin: 0;
@@ -48,7 +50,7 @@
     justify-content: space-between; 
     align-items: center;
     padding: 16px 40px;
-    background-color: #f8f8f8;
+    background-color: rgba(242, 237, 232, 0.942);
     padding: 100px;
     padding-top: 20px;
 
@@ -72,10 +74,10 @@
   } 
   .container{
     display: flex;
-    padding: 100px;
     padding-bottom: 0;
-  
-    background-color: #f8f8f8;
+    background-color: #ffffff;
+    margin: 0;
+
   }
 
  .text-box{
@@ -109,18 +111,18 @@
 
 .plant-card {
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 2px;
+  padding: 2px;
   text-align: center;
   background-color: #f9f9f9;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
  
 }
 
 .plant-card img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .plant-card h4 {
@@ -205,6 +207,7 @@
   font-size: 18px;
 }
 
+
 /* join section */
 
 .join-section {
@@ -254,6 +257,11 @@
   border-radius: 2px;
   
 }
+
+
+
+
+
  /* footer section */
 .footer-section {
   background-color: #f9f9f9;
@@ -318,10 +326,65 @@
   line-height: 1.5;
 }
   /* Responsive: hide menu on small screen */
-  @media (max-width: 768px) {
-    .menu li:not(.cart-item)
-    ul {
-      display: none;
-    }
+  
+
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .plant-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .plants-lover-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .plant-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-menu ul {
+    columns: 2;
+    padding: 0;
+  }
+
+  .join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .join-form input,
+  .join-form button {
+    width: 100%;
+  }
+
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+}
 
